@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper Niu</title>
+    <link rel="stylesheet" href="cover.css">
+    <script src="https://unpkg.com/force-graph"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-left"></div>
+        <div class="header-content">
+            <div class="header-left-content">
+                <a href="index.html" class="name">Cooper Niu</a>
+            </div>
+            <nav>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="research.html" class="nav-item">Research</a>
+                <a href="files/resume.pdf" class="nav-item">Resume</a>
+            </nav>
+        </div>
+        <div class="header-right"></div>
+    </header>
+    
+    <main>
+        <aside class="left-sidebar">
+            <h3></h3>
+        </aside>
+        <section class="content">           
+            <div class="d3-section">
+                <div id="graph"></div>
+            </div>
+            <h3>#Goldfish</h3>
+            <p>A graph representation of the Standard Model of Particle Physics (SM).</p>
+        </section>
+        <aside class="right-sidebar">
+            <h3></h3>
+        </aside>
+        
+    </main>
+
+    <footer>
+        <p>@2025 Cooper Niu</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="d3.js/graph.js"></script>
+</body>
+</html>

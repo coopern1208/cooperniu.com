@@ -1,0 +1,236 @@
+:root {
+    /* Primary Colors */
+    --color-light: #fdfdfd;
+    --color-dark: #504b38f4;
+
+    /* Typography */
+    --font-family: ebgaramond;
+    --font-size: 20px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure all links stay black */
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--color-light);
+    padding-top: 120px; /* Space for fixed header */
+    font-family: var(--font-family);
+    color: var(--color-dark);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-light);
+    z-index: 100;
+}
+
+.header-left {
+    width: 25%;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    border-right: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+}
+
+.header-content {
+    width: 50%;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid var(--color-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-right {
+    width: 25%;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-left: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.name:hover,
+.name:active,
+.name:focus,
+.name:visited {
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-dark);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.nav-item:hover,
+.nav-item:active,
+.nav-item:focus,
+.nav-item:visited {
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 60px);
+}
+
+.left-sidebar {
+    width: 25%;
+    border-right: 1px solid var(--color-light);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.content {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.right-sidebar {
+    width: 25%;
+    border-left: 1px solid var(--color-light);
+    padding: 1rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    overflow-y: auto;
+}
+
+footer {
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--color-light);
+    text-align: center;
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* Additional styles for publications page */
+.resume-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.publication-list {
+    margin: 2rem 0;
+}
+
+.publication {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.publication h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+}
+
+.publication .authors {
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+.publication .journal {
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0.5rem;
+}
+
+.publication .abstract {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+/* LaTeX Equation Styling */
+.equation {
+    margin: 0rem auto;
+    padding: 0rem;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.equation .MathJax {
+    font-size: 1.2rem !important;
+}
+
+/* MathJax inline math styling */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+/* Ensure proper spacing around equations */
+.equation + p,
+p + .equation {
+    margin-top: 1rem;
+}
+
