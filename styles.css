@@ -33,6 +33,11 @@ a:focus {
     font-style: italic;
 }
 
+.bold-inline {
+    font-weight: bold;
+    display: inline;
+}
+
 body {
     display: flex;
     flex-direction: column;
