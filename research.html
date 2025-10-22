@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Cooper Niu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-left"></div>
+        <div class="header-content">
+            <a href="index.html" class="name">Cooper Niu</a>
+            <nav>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="research.html" class="nav-item">Research</a>
+                <a href="file/cooper-niu-resume.pdf" class="nav-item">Resume</a>
+            </nav>
+        </div>
+        <div class="header-right"></div>
+    </header>
+    
+    <main>
+        <aside class="left-sidebar">
+        </aside>
+        <section class="content">
+            <h2> Research Interests ($E = mc^2 + \texttt{AI} ~?$)</h2>
+            <br>
+            <p>
+                The Standard Model of Particle Physics (SM) and the Lambda-Cold Dark Matter (ΛCDM) model are the two most successful theories in physics. SM describes the fundamental particles (smallest building blocks of the universe), while ΛCDM model describes the evolution of the entire universe. Despite their success, they are far from the theory of everything (TOE). The endeavor of finding the new physics has been ongoing for over a decade, but the p
+                <br>
+                <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+                    <img src="images/argmax.png" alt="argmax" style="max-width:400px; width: 100%; border-radius: 5px; object-fit: cover;" />
+                </div>
+                Recently, I am trying to rethink the theoretical physicist's task in the language of machine learning. As a crude summary of search for theory of everything, our work is nothing but an argmax problem of finding the optimal theory
+                $$
+                T^* = \arg \max_{T} \mathcal{L}[\log P(D|T) + \log P(T)],
+                $$
+                where the first term measures empirical adequacy and the second term measures theoretical consistency. This equation reduces our task into a constrained optimization problem that AI excels at.
+                <br>
+                
+            </p>
+            <br>
+            <h2>Publications</h2>
+            <br>
+            <p>
+                Comprehensive list of all my publications is available on <a href="https://inspirehep.net/authors/2847721?ui-citation-summary=true" target="_blank" rel="noopener noreferrer">Hep-Inspire</a>.
+            </p>
+            <br>
+            <br><br>
+            <br>
+
+        </section>
+        <aside class="right-sidebar">
+        </aside>
+    </main>
+
+
+
+    <footer>
+        <p>@2025 Cooper Niu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
