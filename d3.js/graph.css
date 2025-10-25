@@ -1,0 +1,88 @@
+/* Graph Color Variables */
+:root {
+    --color-gauge: #2078B4;              /* Passion red — bold, emotional */
+    --color-covariant: #B2DF8A;          /* Fiery coral — lively and energetic */
+    --color-scalar-interaction: #32A02C; /* Radiant amber — bright, hopeful */
+    --color-gauge-interaction: #FB9A99;  /* Soft burnt orange — grounded warmth */
+    --color-fermion: #E3191C;            /* Romantic magenta — deep and distinct */
+    --color-yukawa: #FDBF6F;             /* Rosy pink — tender, human touch */
+}
+
+/* Graph Node Styles */
+.graph-node {
+    stroke: white;
+    stroke-width: 4;
+    cursor: pointer;
+}
+
+.graph-node:hover {
+    stroke-width: 3;
+    stroke: black;
+}
+
+/* Node group colors */
+.graph-node[data-group="gauge"] {
+    fill: var(--color-gauge);
+}
+
+.graph-node[data-group="covariant"] {
+    fill: var(--color-covariant);
+}
+
+.graph-node[data-group="scalar interaction"] {
+    fill: var(--color-scalar-interaction);
+}
+
+.graph-node[data-group="gauge interaction"] {
+    fill: var(--color-gauge-interaction);
+}
+
+.graph-node[data-group="fermion"] {
+    fill: var(--color-fermion);
+}
+
+.graph-node[data-group="yukawa"] {
+    fill: var(--color-yukawa);
+}
+
+/* Link styles */
+.graph-link {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+}
+
+.graph-link:hover {
+    stroke: black;
+    stroke-width: 3;
+    stroke-opacity: 1;
+}
+
+/* Highlighted elements */
+.graph-link.highlighted {
+    stroke: black;
+    stroke-width: 4;
+    stroke-opacity: 1;
+}
+
+.graph-node.highlighted {
+    stroke: black;
+    stroke-width: 4;
+}
+
+.graph-node.neighbor {
+    stroke: black;
+    stroke-width: 4;
+}
+
+/* Enhanced hover effects */
+.graph-node:hover {
+    stroke-width: 3;
+    stroke: black;
+}
+
+.graph-link:hover {
+    stroke: black;
+    stroke-width: 3;
+    stroke-opacity: 1;
+}

@@ -1,10 +1,10 @@
 :root {
     /* Primary Colors */
     --color-light: #fdfdfd;
-    --color-dark: #504b38f4;
+    --color-dark: #504b38;
 
     /* Typography */
-    --font-family: ebgaramond;
+    --font-family: 16px Libertine, serif;
     --font-size: 20px;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
